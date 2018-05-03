@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>chat UI</title>
+        <link rel="stylesheet" href="./main.css">
+        <script src="./jquery.min.js"></script>
+        <script src="./main.js"></script>
+    </head>
+    <body>
+        <section id="chat-container" class="hide-element">
+            <div id="chat-left-section">
+                <input type="text" name="search-user" value="" placeholder="Search...." class="chat-user-search chat-input-field" />
+                <div id="add-new-user-btn" title="Add">
+                    <img src="./img/add-group-white.png" />
+                </div>
+                <section id="add-group-wrapper" class="hide-element">
+                    <div class="back-chat-btn hide-element">
+                        <img src="./img/left-arrow-white.png" />
+                    </div>
+                    <div class="add-group-chat-wrapper">
+                        <input type="text" name="add-group-title" value="" placeholder="Add group title..." class="add-group-title chat-input-field" />
+                        <input type="text" name="search-group-user" value="" placeholder="Search...." class="search-group-user chat-input-field" />
+                    </div>
+                </section>
+                <section id="chat-details-wrapper">
+                    <section id="chat-list">
+                        <em></em>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Driver 1">Driver 1</div>
+                            <div class="last-chat ellipses" title="Driver 1">You: Hi good morning...How</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Driver 2">Driver 2</div>
+                            <div class="last-chat ellipses" title="Driver 2">Driver 2: It was 10:30 am when I reached the main road where I saw Lijo.</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Driver 3">Driver 3</div>
+                            <div class="last-chat ellipses" title="Driver 3">You: Hi good morning...How</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Lijo Alex Abraham">Lijo Alex Abraham</div>
+                            <div class="last-chat ellipses" title="Lijo Alex Abraham">You: Hi good morning...How</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Varshah Sambath">Varshah Sambath</div>
+                            <div class="last-chat ellipses" title="Varshah Sambath">You: Hi good morning...How</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Surya Surendran">Surya Surendran</div>
+                            <div class="last-chat ellipses" title="Surya Surendran">You: Hi good morning...How</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Manas Nair">Manas Nair</div>
+                            <div class="last-chat ellipses" title="Manas Nair">You: Hi good morning...How</div>
+                        </div>
+                        <div class="chat-tile">
+                            <div class="chat-person ellipses" title="Alannah Anastasia Caroline Charlotte Colette Cordelia Elenora Elizabeth">Alannah Anastasia Caroline Charlotte Colette Cordelia Elenora Elizabeth</div>
+                            <div class="last-chat ellipses" title="Alannah Anastasia Caroline Charlotte Colette Cordelia Elenora Elizabeth">You: Hi good morning...How</div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div id="chat-right-section">
+                <div id="chat-container-header">
+                    <h2 class="ellipses"></h2>
+                </div>
+                <div id="close-chat-btn" title="Add">
+                    <img src="./img/del.png" />
+                </div>
+                <section id="live-chat-container">
+                    <!-- <div class="chat-wrapper"><div class="chat-box chat-box-for-sender">
+                    </div><em class="send-time"></em></div>
+                    <div class="chat-box chat-box-for-receiver">
+                    </div> -->
+                </section>
+                <section id="live-chat-sender">
+                    <input type="text" name="send-chat-message" value="" placeholder="Send a message" class="send-chat-field chat-input-field" />
+                    <div class="chat-send-btn">
+                        <img src="./img/message-sender.png" />
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div id="chat-button" class="clearfix"></div>
+    </body>
+</html>

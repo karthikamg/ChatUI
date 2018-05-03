@@ -1,0 +1,290 @@
+#chat-button {
+    background: url(./img/chat-icon-orange.png) no-repeat;
+    background-size: 43px 43px;
+    width: 47px;
+    height: 55px;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    cursor: pointer;
+    right: 40px;
+    transition: 1s;
+}
+#chat-container {
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, .5);
+    border-radius: 8px;
+    color: #222;
+    position: fixed;
+    bottom: 11%;
+    z-index: 10000;
+    right: 10%;
+    -webkit-transition: width 2s, height 4s; /* Safari */
+    transition: width 2s, height 4s;
+}
+#chat-left-section {
+    background-color: #f58220;
+    color: #fff;
+    padding: 20px 12px;
+    width: 46%;
+    float: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    flex: 1;
+}
+#chat-details-wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 21px;
+}
+#chat-right-section {
+    padding: 20px 2px 0px 12px;
+    width: 56%;
+    float: right;
+    position: relative;
+    max-width: 48%;
+    background-color: #ededed;
+}
+#add-new-user-btn {
+    width: 10%;
+    padding: 3px 7px 4px 0;
+    height: 22px;
+    margin-bottom: 0;
+    z-index: 10000;
+    cursor: pointer;
+    transition: 1s;
+    display: inline-block;
+    float: right;
+    display: none;
+}
+#close-chat-btn {
+    float: right;
+    margin-right: 8px;
+    cursor: pointer;
+}
+#add-new-user-btn:hover {
+    background-color: #f8a762;
+    border-radius: 25px;
+}
+#close-chat-btn img,  #add-new-user-btn img {
+    width: 94%;
+    margin-left: 5px;
+}
+.chat-input-field {
+    height: 30px;
+    width: 78%;
+    padding: 0 11px;
+    border: none;
+    background-color: #f8a762 !important;
+    color: #fff;
+    text-indent: 17px;
+    background-position: 4px !important;
+    font-weight: bold;
+    font-size: 15px;
+}
+#live-chat-sender {
+    width: 94%;
+    float: left;
+    border-top: 1px solid #dbdde3;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    position: absolute;
+    bottom: 0;
+}
+#live-chat-sender input {
+    background-color: #fff !important;
+    color: #222 !important;
+    width: 82%;
+    text-indent: 5px;
+}
+#chat-list {
+    min-height: 205px;
+    max-height: 265px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.chat-user-search {
+    background: url(./img/search.png) no-repeat;
+    width: 89%;
+}
+.chat-tile {
+    padding: 10px 5px;
+    position: relative;
+}
+.chat-tile:hover:after, .selected-chat-highlight:after {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 112%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+}
+.ellipses {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.chat-tile:hover, .selected-chat-highlight {
+    background-color: #f8a762;
+    cursor: pointer;
+}
+.chat-input-field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+    font-weight: 100;
+}
+.chat-input-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+    font-weight: 100;
+}
+
+.chat-input-field::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+    font-weight: 100;
+}
+.send-chat-field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #919191;
+}
+.send-chat-field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #919191;
+}
+
+.send-chat-field::-ms-input-placeholder { /* Microsoft Edge */
+    color: #919191;
+}
+#chat-container-header h2 {
+    color: #222;
+    font-size: 18px;
+    width: 80%;
+    display: inline-block;
+}
+#add-group-wrapper input {
+    margin-top: 5px;
+    width: 90%;
+}
+#chat-container-header {
+    border-bottom: 1px solid #dbdde3;
+    padding-bottom: 3px;
+    width: 89%;
+    float: left;
+    box-shadow: 5px 5px 8px #c8c8c8;
+}
+.back-chat-btn {
+    width: 8%;
+    float: left;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.back-chat-btn img {
+    width: 100%;
+}
+.add-group-chat-wrapper {
+    width: 90%;
+    float: right;
+}
+.chat-box {
+    border-radius: 5px;
+    box-shadow: 0 0 6px #B2B2B2;
+    display: inline-block;
+    padding: 10px 18px;
+    position: relative;
+    vertical-align: top;
+    min-width: 37%;
+}
+#live-chat-container {
+    float: left;
+    margin-top: 10px;
+    width: 95%;
+    padding-bottom: 9px;
+    max-height: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 59px;
+    top: 52px;
+}
+.chat-box::before {
+    content: "\00a0";
+    display: block;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    transform:             rotate( 29deg ) skew( -35deg );
+        -moz-transform:    rotate( 29deg ) skew( -35deg );
+        -ms-transform:     rotate( 29deg ) skew( -35deg );
+        -o-transform:      rotate( 29deg ) skew( -35deg );
+        -webkit-transform: rotate( 29deg ) skew( -35deg );
+    width:  20px;
+}
+.chat-box-for-sender {
+    float: left;
+    margin: 5px 45px 5px 20px;
+    background-color: #919191;
+    color: #fff;
+}
+.chat-box-for-sender::before {
+    background-color: #919191;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
+    left: -9px;
+}
+.chat-box-for-receiver {
+    float: right;
+    margin: 5px 20px 5px 45px;
+    background-color: #f58220;
+    color: #fff;
+}
+.chat-box-for-receiver::before {
+    background-color: #f58220;
+    box-shadow: 2px -2px 2px 0 rgba( 245,130,32, .4 );
+    right: -9px;
+}
+.chat-send-btn {
+    float: right;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.send-chat-field {
+    color: #222;
+    font-weight: 100;
+}
+.last-chat {
+    font-size: 15px;
+}
+.chat-wrapper {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-bottom: 18px;
+}
+.chat-wrapper em {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -14px;
+    font-size: 14px;
+}
+.chat-wrapper .msg-send-time {
+    left: 7%;
+    text-align: left;
+}
+.chat-wrapper .msg-receive-time {
+    right: 25px;
+    text-align: right;
+}
+
+
+h2 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 19px;
+}
+.show-element {
+    display: flex;
+}
+.hide-element {
+    display: none;
+}
